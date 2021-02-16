@@ -6,3 +6,12 @@ Content-Type: application/json
 {
     "Id": "{{$guid}}"
 }
+
+###
+
+POST https://mock-fraud-detection.azurewebsites.net/api/frauds/detect
+Content-Type: application/json
+
+{
+    "Id": "{{$guid}}"
+}
