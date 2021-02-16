@@ -1,0 +1,8 @@
+# Use Visual Studio Code REST Client to run them
+
+POST http://localhost:5000/api/frauds/detect
+Content-Type: application/json
+
+{
+    "Id": "{{$guid}}"
+}
