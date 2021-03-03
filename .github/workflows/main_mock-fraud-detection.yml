@@ -27,10 +27,10 @@ jobs:
     - name: dotnet publish
       run: dotnet publish ./src/MockFraudDetection.Api/MockFraudDetection.Api.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
-    - name: Deploy to Azure Web App
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: 'mock-fraud-detection'
-        slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_5c6f6937511b4ef9b62de17818131dde }}
-        package: ${{env.DOTNET_ROOT}}/myapp 
+#    - name: Deploy to Azure Web App
+#      uses: azure/webapps-deploy@v2
+#      with:
+#        app-name: 'mock-fraud-detection'
+#        slot-name: 'production'
+#        publish-profile: ${{ secrets.AzureAppService_PublishProfile_5c6f6937511b4ef9b62de17818131dde }}
+#        package: ${{env.DOTNET_ROOT}}/myapp 
